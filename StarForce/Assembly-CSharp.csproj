@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{D19EADA6-8953-A88D-7896-F61420240126}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_0;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>E:/unity 5.4.0f3/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>E:/unity 5.4.0f3/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\GameMain\Scripts\Base\GameEntry.Builtin.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Base\GameEntry.Custom.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Base\GameEntry.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Config\ConfigComponent.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Config\DeviceModelConfig.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DRAircraft.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DRArmor.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DRAsteroid.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DREntity.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DRMusic.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DRScene.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DRSound.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DRThruster.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DRUIForm.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DRUISound.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DRWeapon.cs" />
+     <Compile Include="Assets\GameMain\Scripts\DataTable\DataTableExtension.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Debugger\ChangeLanguageDebuggerWindow.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Definition\Constant\Constant.Layer.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Definition\Constant\Constant.ProcedureData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Definition\Constant\Constant.Setting.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Definition\DataStruct\BuildInfo.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Definition\DataStruct\DeviceModel.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Definition\DataStruct\ImpactData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Definition\DataStruct\VersionInfo.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Definition\Enum\CampType.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Definition\Enum\QualityLevelType.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Definition\Enum\RelationType.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\AccessoryObjectData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\AircraftData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\ArmorData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\AsteroidData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\BulletData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\EffectData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\EntityData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\MyAircraftData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\TargetableObjectData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\ThrusterData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityData\WeaponData.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityExtension.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityLogic\Aircraft.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityLogic\Armor.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityLogic\Asteroid.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityLogic\Bullet.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityLogic\Effect.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityLogic\Entity.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityLogic\MyAircraft.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityLogic\TargetableObject.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityLogic\Thruster.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Entity\EntityLogic\Weapon.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Game\GameBase.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Game\GameMode.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Game\SurvivalGame.cs" />
+     <Compile Include="Assets\GameMain\Scripts\HPBar\HPBarComponent.cs" />
+     <Compile Include="Assets\GameMain\Scripts\HPBar\HPBarItem.cs" />
+     <Compile Include="Assets\GameMain\Scripts\HPBar\HPBarItemObject.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Localization\LocalizationExtension.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Localization\XmlLocalizationHelper.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\CSPacketBase.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\CSPacketHeader.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\NetworkChannelHelper.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\Packet\CSHeartBeat.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\Packet\SCHeartBeat.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\PacketBase.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\PacketHandler\SCHeartBeatHandler.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\PacketHandlerBase.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\PacketHeaderBase.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\PacketType.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\SCPacketBase.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Network\SCPacketHeader.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Procedure\ProcedureBase.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Procedure\ProcedureChangeScene.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Procedure\ProcedureCheckVersion.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Procedure\ProcedureLaunch.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Procedure\ProcedureMain.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Procedure\ProcedureMenu.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Procedure\ProcedurePreload.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Procedure\ProcedureSplash.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Scene\HideByBoundary.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Scene\SceneId.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Scene\ScrollableBackground.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Sound\SoundExtension.cs" />
+     <Compile Include="Assets\GameMain\Scripts\UI\AboutForm.cs" />
+     <Compile Include="Assets\GameMain\Scripts\UI\CommonButton.cs" />
+     <Compile Include="Assets\GameMain\Scripts\UI\DialogForm.cs" />
+     <Compile Include="Assets\GameMain\Scripts\UI\DialogParams.cs" />
+     <Compile Include="Assets\GameMain\Scripts\UI\MenuForm.cs" />
+     <Compile Include="Assets\GameMain\Scripts\UI\SettingForm.cs" />
+     <Compile Include="Assets\GameMain\Scripts\UI\UGuiForm.cs" />
+     <Compile Include="Assets\GameMain\Scripts\UI\UGuiGroupHelper.cs" />
+     <Compile Include="Assets\GameMain\Scripts\UI\UIExtension.cs" />
+     <Compile Include="Assets\GameMain\Scripts\UI\UIFormId.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Utility\AIUtility.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Utility\AssetUtility.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Utility\LitJsonHelper.cs" />
+     <Compile Include="Assets\GameMain\Scripts\Utility\WebUtility.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Base\AvoidJIT.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Base\BaseComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Base\GameEntry.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Base\GameFrameworkComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Base\ShutdownType.cs" />
+     <Compile Include="Assets\Scripts\Runtime\DataNode\DataNodeComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\DataTable\DataTableComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\DataTable\DataTableHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\DataTable\DefaultDataTableHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\DataTable\LoadDataTableDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\DataTable\LoadDataTableFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\DataTable\LoadDataTableInfo.cs" />
+     <Compile Include="Assets\Scripts\Runtime\DataTable\LoadDataTableSuccessEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\DataTable\LoadDataTableUpdateEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerActiveWindowType.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.ConsoleWindow.LogNode.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.ConsoleWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.EnvironmentInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.FpsCounter.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.GraphicsInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.InputAccelerationInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.InputCompassInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.InputGyroscopeInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.InputLocationInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.InputSummaryInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.InputTouchInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.ObjectPoolInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.OperationsWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.PathInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.ProfilerInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.QualityInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.RuntimeMemoryInformationWindow.Sample.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.RuntimeMemoryInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.SceneInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.ScreenInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.ScrollableDebuggerWindowBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.SettingsWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.SystemInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.TimeInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.WebPlayerInformationWindow.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Debugger\DebuggerComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Download\DefaultDownloadAgentHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Download\DownloadAgentHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Download\DownloadComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Download\DownloadFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Download\DownloadStartEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Download\DownloadSuccessEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Download\DownloadUpdateEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Download\UnityWebRequestDownloadAgentHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\AttachEntityInfo.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\DefaultEntityGroupHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\DefaultEntityHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\Entity.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\EntityComponent.EntityGroup.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\EntityComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\EntityGroupHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\EntityHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\EntityLogic.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\HideEntityCompleteEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\ShowEntityDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\ShowEntityFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\ShowEntityInfo.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\ShowEntitySuccessEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Entity\ShowEntityUpdateEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Event\EventComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Fsm\FsmComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Localization\DefaultLocalizationHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Localization\LoadDictionaryDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Localization\LoadDictionaryFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Localization\LoadDictionaryInfo.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Localization\LoadDictionarySuccessEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Localization\LoadDictionaryUpdateEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Localization\LocalizationComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Localization\LocalizationHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Network\NetworkClosedEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Network\NetworkComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Network\NetworkConnectedEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Network\NetworkCustomErrorEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Network\NetworkErrorEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Network\NetworkMissHeartBeatEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Network\NetworkSendPacketEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\ObjectPool\ObjectPoolComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Procedure\ProcedureComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\DefaultLoadResourceAgentHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\DefaultResourceHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\EditorResourceComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\LoadResourceAgentHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\ReadWritePathType.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\ResourceCheckCompleteEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\ResourceComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\ResourceHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\ResourceInitCompleteEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\ResourceUpdateAllCompleteEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\ResourceUpdateChangedEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\ResourceUpdateFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\ResourceUpdateStartEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\ResourceUpdateSuccessEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\SceneAsset.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\VersionListUpdateFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Resource\VersionListUpdateSuccessEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Scene\LoadSceneDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Scene\LoadSceneFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Scene\LoadSceneSuccessEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Scene\LoadSceneUpdateEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Scene\SceneComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Scene\UnloadSceneFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Scene\UnloadSceneSuccessEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Setting\DefaultSettingHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Setting\SettingComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Setting\SettingHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\DefaultSoundAgentHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\DefaultSoundGroupHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\DefaultSoundHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\PlaySoundDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\PlaySoundFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\PlaySoundInfo.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\PlaySoundSuccessEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\PlaySoundUpdateEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\SoundAgentHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\SoundComponent.SoundGroup.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\SoundComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\SoundGroupHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Sound\SoundHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\CloseUIFormCompleteEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\DefaultUIFormHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\DefaultUIGroupHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\OpenUIFormDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\OpenUIFormFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\OpenUIFormSuccessEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\OpenUIFormUpdateEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\UIComponent.UIGroup.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\UIComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\UIForm.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\UIFormHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\UIFormLogic.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\UIGroupHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\UIIntKey.cs" />
+     <Compile Include="Assets\Scripts\Runtime\UI\UIStringKey.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Utility\Helper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Utility\JsonHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Utility\LogHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Utility\ProfilerHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Utility\UnityExtension.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Utility\ZipHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarBool.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarByte.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarBytes.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarChar.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarChars.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarColor.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarDateTime.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarDecimal.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarDouble.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarFloat.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarGameObject.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarInt.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarLong.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarMaterial.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarObject.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarQuaternion.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarRect.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarSByte.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarShort.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarString.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarTexture.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarTransform.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarUInt.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarULong.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarUShort.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarUnityObject.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarVector2.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarVector3.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Variable\VarVector4.cs" />
+     <Compile Include="Assets\Scripts\Runtime\WebRequest\DefaultWebRequestAgentHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\WebRequest\UnityWebRequestAgentHelper.cs" />
+     <Compile Include="Assets\Scripts\Runtime\WebRequest\WWWFormInfo.cs" />
+     <Compile Include="Assets\Scripts\Runtime\WebRequest\WebRequestAgentHelperBase.cs" />
+     <Compile Include="Assets\Scripts\Runtime\WebRequest\WebRequestComponent.cs" />
+     <Compile Include="Assets\Scripts\Runtime\WebRequest\WebRequestFailureEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\WebRequest\WebRequestStartEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Runtime\WebRequest\WebRequestSuccessEventArgs.cs" />
+     <None Include="Assets\GameMain\Localization\English\Dictionaries\Default.xml" />
+     <None Include="Assets\GameMain\DataTables\UISound.txt" />
+     <None Include="Assets\GameMain\Localization\Korean\Dictionaries\Default.xml" />
+     <None Include="Assets\GameMain\DataTables\Scene.txt" />
+     <None Include="Assets\GameMain\Configs\AssetBundleEditor.xml" />
+     <None Include="Assets\GameMain\Configs\DefaultDictionary.xml" />
+     <None Include="Assets\GameMain\DataTables\Aircraft.txt" />
+     <None Include="Assets\GameMain\DataTables\UIForm.txt" />
+     <None Include="Assets\GameMain\DataTables\Music.txt" />
+     <None Include="Assets\GameMain\DataTables\Asteroid.txt" />
+     <None Include="Assets\Libraries\link.xml" />
+     <None Include="Assets\GameMain\Configs\AssetBundleBuilder.xml" />
+     <None Include="Assets\Libraries\GameFramework.xml" />
+     <None Include="Assets\GameMain\DataTables\Thruster.txt" />
+     <None Include="Assets\GameMain\DataTables\Entity.txt" />
+     <None Include="Assets\GameMain\DataTables\Armor.txt" />
+     <None Include="Assets\GameMain\Localization\ChineseSimplified\Dictionaries\Default.xml" />
+     <None Include="Assets\GameMain\Localization\ChineseTraditional\Dictionaries\Default.xml" />
+     <None Include="Assets\GameMain\Configs\AssetBundleCollection.xml" />
+     <None Include="Assets\GameMain\Configs\BuildSettings.xml" />
+     <None Include="Assets\GameMain\DataTables\Weapon.txt" />
+     <None Include="Assets\GameMain\DataTables\Sound.txt" />
+     <None Include="Assets\GameMain\Configs\BuildInfo.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>E:/unity 5.4.0f3/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>E:/unity 5.4.0f3/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>E:/Learning/StarForce/Assets/GameMain/Libraries/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="protobuf-net">
+ <HintPath>E:/Learning/StarForce/Assets/GameMain/Libraries/protobuf-net.dll</HintPath>
+ </Reference>
+ <Reference Include="GameFramework">
+ <HintPath>E:/Learning/StarForce/Assets/Libraries/GameFramework.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>E:/Learning/StarForce/Assets/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
